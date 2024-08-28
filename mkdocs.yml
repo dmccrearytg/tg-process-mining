@@ -10,6 +10,9 @@ edit_uri: edit/master/docs/
 nav:
   - Home: index.md
   - About: about.md
+  - Concepts:
+    - Introduction: concepts/index.md
+    - GNN: concepts/gnn.md
   - Glossary: glossary.md
   - Contact: contact.md
 

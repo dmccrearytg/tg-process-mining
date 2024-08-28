@@ -1,7 +1,7 @@
 # TigerGraph Process Mining Website
 
-Resources for teaching classes on how to implement a Process Mining application using TigerGraph.
+This GitHub repo contains resources for teaching classes on how to implement a Process Mining application using TigerGraph.
 
-Public mkdocs:
+Documentation website:
 
 [https://dmccrearytg.github.io/tg-process-mining/](https://dmccrearytg.github.io/tg-process-mining/)
