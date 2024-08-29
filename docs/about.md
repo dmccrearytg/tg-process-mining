@@ -2,7 +2,11 @@
 
 **Unlock the Power of Your Processes**
 
-In today's fast-paced business environment, understanding and optimizing your processes is crucial for staying competitive. Our new platform demonstrates how TigerGraph, a leading graph database, can revolutionize process mining, providing unparalleled insights into your business operations.
+In today's fast-paced business environment, understanding and optimizing your processes is crucial for staying competitive.
+
+TigerGraph customers know that graph data models are ideally suited to solving complex problems with event workflows.
+This website demonstrates how TigerGraph can be used a a core tool to solve complex process mining problems
+providing unparalleled insights into your business operations.
 
 **Why Process Mining with TigerGraph?**
 
