@@ -1,5 +1,7 @@
 # TigerGraph Process Mining
 
+![](./img/banner.png)
+
 Welcome to the TigerGraph Process Mining website.
 
 Graph databases are an excellent fit for process mining applications because they are designed to handle highly interconnected data, making it easy to model and analyze complex business processes. Unlike traditional relational databases, which can struggle with the intricate relationships and dependencies inherent in process data, graph databases like TigerGraph excel at traversing relationships quickly and efficiently. This allows for real-time analysis of process flows, enabling organizations to identify bottlenecks, deviations, and optimization opportunities with greater precision.
