@@ -28,6 +28,14 @@ By analyzing the event logs of customer service tickets, process mining can iden
 
 **Example**: A helpdesk process mining analysis reveals that tickets often stall when escalated to a particular team. By reallocating resources or providing additional training to that team, the company can reduce the average time to resolve tickets.
 
+### Optimizing Sales Funnel (Sales Pipeline)
+
+Process mining can analyze the flow of potential customers through a sales funnel, identifying where prospects drop off and why. This data can be used to refine marketing strategies and optimize conversion rates.
+
+**Example**: A SaaS company uses process mining to track prospects from initial contact through to conversion. The analysis shows that a large number of prospects drop off after the trial period ends. Offering a discount or additional support during this period improves conversions.
+
+[Detailed Example of Stages and KPIs](concepts/sales-pipeline.md)
+
 ### Streamlining User Onboarding
 
 Process mining can analyze the steps new users take when onboarding to a digital service, identifying common pitfalls or steps where users struggle. The onboarding process can then be optimized to make it smoother and more intuitive. 
@@ -51,12 +59,6 @@ Process mining can track user interactions within a mobile app, identifying comm
 Process mining can be used to analyze the sequence of steps taken during customer support calls, identifying patterns that lead to first call resolution (FCR) or repeated calls. This insight allows call centers to train agents on the most effective resolution strategies. 
 
 **Example**: A call center finds that customers often have to call back due to incomplete issue resolution. Process mining shows that calls handled by agents following a certain script have higher FCR rates. Standardizing this script across the center improves overall efficiency.
-
-### Optimizing Sales Funnel (Sales Pipeline)
-
-Process mining can analyze the flow of potential customers through a sales funnel, identifying where prospects drop off and why. This data can be used to refine marketing strategies and optimize conversion rates.
-
-**Example**: A SaaS company uses process mining to track prospects from initial contact through to conversion. The analysis shows that a large number of prospects drop off after the trial period ends. Offering a discount or additional support during this period improves conversions.
 
 ### Reducing Response Times in Customer Service
 
