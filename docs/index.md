@@ -1,6 +1,6 @@
 # TigerGraph Process Mining
 
-![](./img/banner.png)
+![](./img/banner.png){: width="400" }
 
 Welcome to the TigerGraph Process Mining website.
 

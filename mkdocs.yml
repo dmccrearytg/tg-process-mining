@@ -13,7 +13,8 @@ nav:
   - Use Cases: use-cases.md
   - Why Graph: why-graph.md
   - Concepts:
-    - Introduction: concepts/index.md
+    - Overview: concepts/index.md
+    - Introduction: concepts/introduction.md
     - Event Logs: concepts/event-logs.md
     - Sales Pipeline: concepts/sales-pipeline.md
     - GNN: concepts/gnn.md
@@ -21,7 +22,6 @@ nav:
   - References: references.md
   - Contact: contact.md
 
-# edit_uri: 'blob/master/docs'
 theme:
   name: material
   logo: img/tg-logo-small.png
