@@ -52,9 +52,9 @@ Process mining can be used to analyze the sequence of steps taken during custome
 
 **Example**: A call center finds that customers often have to call back due to incomplete issue resolution. Process mining shows that calls handled by agents following a certain script have higher FCR rates. Standardizing this script across the center improves overall efficiency.
 
-### Optimizing Sales Funnel in Web Commerce
+### Optimizing Sales Funnel (Sales Pipeline)
 
-Process mining can analyze the flow of potential customers through a sales funnel, identifying where prospects drop off and why. This data can be used to refine marketing strategies and optimize conversion rates. 
+Process mining can analyze the flow of potential customers through a sales funnel, identifying where prospects drop off and why. This data can be used to refine marketing strategies and optimize conversion rates.
 
 **Example**: A SaaS company uses process mining to track prospects from initial contact through to conversion. The analysis shows that a large number of prospects drop off after the trial period ends. Offering a discount or additional support during this period improves conversions.
 

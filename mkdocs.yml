@@ -15,6 +15,7 @@ nav:
   - Concepts:
     - Introduction: concepts/index.md
     - Event Logs: concepts/event-logs.md
+    - Sales Pipeline: concepts/sales-pipeline.md
     - GNN: concepts/gnn.md
   - Glossary: glossary.md
   - Contact: contact.md

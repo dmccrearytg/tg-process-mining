@@ -8,6 +8,10 @@
 
 [Event Logs](./event-logs.md)
 
+## Sales Pipeline
+
+[Sales Pipeline](./sales-pipeline.md)
+
 ## GNNs
 
 [Use of GNN](gnn.md)
