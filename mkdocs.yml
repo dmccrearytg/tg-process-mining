@@ -10,6 +10,8 @@ edit_uri: edit/master/docs/
 nav:
   - Home: index.md
   - About: about.md
+  - Use Cases: use-cases.md
+  - Why Graph: why-graph.md
   - Concepts:
     - Introduction: concepts/index.md
     - GNN: concepts/gnn.md
