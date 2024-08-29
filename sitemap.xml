@@ -2,37 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dmccrearytg.github.io/tg-process-mining/</loc>
-         <lastmod>2024-08-28</lastmod>
+         <lastmod>2024-08-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dmccrearytg.github.io/tg-process-mining/about/</loc>
-         <lastmod>2024-08-28</lastmod>
+         <lastmod>2024-08-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dmccrearytg.github.io/tg-process-mining/contact/</loc>
-         <lastmod>2024-08-28</lastmod>
+         <lastmod>2024-08-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dmccrearytg.github.io/tg-process-mining/data-model/</loc>
-         <lastmod>2024-08-28</lastmod>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dmccrearytg.github.io/tg-process-mining/glossary/</loc>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dmccrearytg.github.io/tg-process-mining/references/</loc>
+         <lastmod>2024-08-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dmccrearytg.github.io/tg-process-mining/resources/</loc>
-         <lastmod>2024-08-28</lastmod>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dmccrearytg.github.io/tg-process-mining/use-cases/</loc>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dmccrearytg.github.io/tg-process-mining/why-graph/</loc>
+         <lastmod>2024-08-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dmccrearytg.github.io/tg-process-mining/concepts/</loc>
-         <lastmod>2024-08-28</lastmod>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dmccrearytg.github.io/tg-process-mining/concepts/event-logs/</loc>
+         <lastmod>2024-08-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dmccrearytg.github.io/tg-process-mining/concepts/gnn/</loc>
-         <lastmod>2024-08-28</lastmod>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dmccrearytg.github.io/tg-process-mining/concepts/introduction/</loc>
+         <lastmod>2024-08-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

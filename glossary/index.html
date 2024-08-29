@@ -1,0 +1,1198 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Resources for teaching classes on Micro Simulators using generative AI and ChatGPT.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccrearytg.github.io/tg-process-mining/glossary/">
+      
+      
+        <link rel="prev" href="../concepts/gnn/">
+      
+      
+        <link rel="next" href="../contact/">
+      
+      
+      <link rel="icon" href="../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>Glossary - TigerGraph Process Mining Demo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#glossary-of-terms-for-process-mining" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="TigerGraph Process Mining Demo" class="md-header__button md-logo" aria-label="TigerGraph Process Mining Demo" data-md-component="logo">
+      
+  <img src="../img/tg-logo-small.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TigerGraph Process Mining Demo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Glossary
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccrearytg/tg-process-mining" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="TigerGraph Process Mining Demo" class="md-nav__button md-logo" aria-label="TigerGraph Process Mining Demo" data-md-component="logo">
+      
+  <img src="../img/tg-logo-small.png" alt="logo">
+
+    </a>
+    TigerGraph Process Mining Demo
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccrearytg/tg-process-mining" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use-cases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Use Cases
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../why-graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Why Graph
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../concepts/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Concepts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sample-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Prompt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-of-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      List of Terms
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="List of Terms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bottleneck" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bottleneck
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compliance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conformance-checking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conformance Checking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-cleaning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Cleaning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Extraction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Integration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-correlation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Correlation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Filtering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Log
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-log-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Log Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-performance-indicator-kpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Performance Indicator (KPI)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lead-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lead Time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-parsing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Log Parsing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Discovery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Instance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-mining" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Mining
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Optimization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resource
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#root-cause-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Root Cause Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#throughput-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Throughput Time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timestamp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timestamp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variant
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sample-prompt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Prompt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-of-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      List of Terms
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="List of Terms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bottleneck" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bottleneck
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compliance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conformance-checking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conformance Checking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-cleaning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Cleaning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Extraction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Integration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-correlation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Correlation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Filtering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Log
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-log-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Log Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-performance-indicator-kpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Performance Indicator (KPI)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lead-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lead Time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-parsing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Log Parsing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Discovery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Instance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-mining" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Mining
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Optimization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resource
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#root-cause-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Root Cause Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#throughput-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Throughput Time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timestamp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timestamp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variant
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="glossary-of-terms-for-process-mining">Glossary of Terms for Process Mining</h1>
+<h2 id="sample-prompt">Sample Prompt</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>You are an expert at creating precise definitions of technical terms using.  
+Your definitions are precise, concise, distinct and non-circular.  
+You give a quick definition followed by an example.  
+You always return the term name in a markdown level-4 
+heading followed by the definition and example.
+
+Please create a list of business terms for an application program that does process mining.  
+Make sure the key terms are listed in alphabetical order.
+</code></pre></div></td></tr></table></div>
+<h2 id="list-of-terms">List of Terms</h2>
+<h4 id="activity">Activity</h4>
+<p>A specific task or action within a business process that contributes to the completion of that process. </p>
+<p><strong>Example</strong>: In a purchase order process, activities might include "Submit Purchase Request," "Approve Request," and "Issue Payment."</p>
+<h4 id="bottleneck">Bottleneck</h4>
+<p>A point in a process where the flow of work is impeded, causing delays and reducing the overall efficiency of the process. </p>
+<p>In a hiring process, a bottleneck might occur during the interview scheduling phase if only a limited number of interviewers are available.</p>
+<h4 id="case">Case</h4>
+<p>An individual instance of a business process, often represented by a unique identifier, tracking all activities and events related to that instance.</p>
+<p><strong>Example</strong>: Each purchase order processed by a company can be considered a separate case, tracked from initiation to completion.</p>
+<h4 id="compliance">Compliance</h4>
+<p>Adherence to laws, regulations, standards, or internal policies within a business process. </p>
+<p><strong>Example:</strong> Ensuring that all financial transactions within a company are recorded and reported according to regulatory requirements is a matter of compliance.</p>
+<h4 id="conformance-checking">Conformance Checking</h4>
+<p>The process of comparing the actual execution of a business process (as recorded in logs) against a predefined model to identify deviations or inefficiencies. </p>
+<p><strong>Example</strong>: A conformance check might reveal that a step intended to be completed in three days took a week in actual practice, indicating a bottleneck.</p>
+<h4 id="data-cleaning">Data Cleaning</h4>
+<p>The process of identifying and correcting errors, inconsistencies, or missing values in event data to ensure its accuracy and reliability for analysis. </p>
+<p>For example, data cleaning might involve removing duplicate entries or filling in missing timestamps in a log file.</p>
+<h4 id="data-extraction">Data Extraction</h4>
+<p>The process of retrieving specific data from various sources, such as log files, to be used for analysis or further processing. </p>
+<p>For instance, data extraction might involve pulling timestamped events from a server log to analyze system performance over time.</p>
+<h4 id="data-integration">Data Integration</h4>
+<p>The process of combining event data from multiple sources or systems into a cohesive dataset for process analysis. </p>
+<p>For example, data integration might involve merging customer service logs with sales transaction logs to analyze the end-to-end customer experience.#### Data Transformation</p>
+<p>The process of converting extracted raw event data into a structured format suitable for analysis, often involving normalization and aggregation. In a sales process, data transformation might involve standardizing date formats and combining multiple event logs into a unified dataset.</p>
+<h4 id="event">Event</h4>
+<p>A record of a specific occurrence or action within a process, often timestamped and associated with a particular case. </p>
+<p>For example, the event "Order Shipped" marks the time when an order is dispatched from the warehouse in an order fulfillment process.</p>
+<h4 id="event-correlation">Event Correlation</h4>
+<p>The process of linking related events across multiple log files or sources to provide a complete view of a process instance. </p>
+<p>In an IT monitoring process, event correlation might link an "Error Logged" event with a subsequent "System Restarted" event across different systems.</p>
+<h4 id="event-data">Event Data</h4>
+<p>The raw information that records individual occurrences within a business process, typically stored in log files and used as the basis for process mining. </p>
+<p>In a customer service process, event data might include entries like "Call Received," "Ticket Created," and "Issue Resolved."</p>
+<h4 id="event-filtering">Event Filtering</h4>
+<p>The process of selecting specific events or types of events from a log file to focus on relevant data for analysis. </p>
+<p>For instance, event filtering might be used to isolate only the "Payment Received" events from a broader set of e-commerce transaction logs.</p>
+<h4 id="event-log">Event Log</h4>
+<p>A chronological record of all events or activities associated with a business process, typically used as the primary data source in process mining. </p>
+<p><strong>Example</strong>: An event log for an online order process might include timestamps for when the order was placed, confirmed, shipped, and delivered.</p>
+<h4 id="event-log-management">Event Log Management</h4>
+<p>The process of collecting, storing, and organizing log files to ensure that event data is readily accessible for analysis. </p>
+<p>For example, event log management might involve setting up automated processes to archive older logs while maintaining access to recent logs for process mining.</p>
+<h4 id="key-performance-indicator-kpi">Key Performance Indicator (KPI)</h4>
+<p>A measurable value that indicates how effectively a process or organization is achieving its objectives. </p>
+<p>For example, the average time to resolve customer support tickets is a KPI that reflects the efficiency of the support process.</p>
+<h4 id="lead-time">Lead Time</h4>
+<p>The total time taken from the initiation of a process to its completion, including both active working time and any delays. </p>
+<p>In a manufacturing process, lead time includes the time from receiving an order to delivering the finished product to the customer.</p>
+<h4 id="log-parsing">Log Parsing</h4>
+<p>The process of analyzing and interpreting log files to extract structured event data for further analysis. </p>
+<p>For example, log parsing might involve identifying and isolating key events such as "Login Success" or "File Upload" from a web server log.</p>
+<h4 id="process-discovery">Process Discovery</h4>
+<p>The technique of automatically generating a business process model from event log data, revealing the <strong>actual</strong> workflow as executed.</p>
+<p>Very often the documented workflows do not follow the actual worklows.</p>
+<p><strong>Example</strong>: By analyzing the event logs, process discovery might show that orders are often rerouted through additional approval steps not initially considered in the formal process.</p>
+<h4 id="process-instance">Process Instance</h4>
+<p>A single execution of a business process, from start to finish, capturing all related activities and events. </p>
+<p>Each customer's journey through a loan application process represents a separate process instance.</p>
+<h4 id="process-mining">Process Mining</h4>
+<p>A data-driven technique used to analyze and improve business processes by extracting insights from event logs. </p>
+<p>A company might use process mining to identify inefficiencies in their procurement process by analyzing the time taken at each step.</p>
+<h4 id="process-model">Process Model</h4>
+<p>A formalized representation of a business process, often visual, showing the sequence of activities, decision points, and flow of information or materials. </p>
+<p><strong>Example</strong>: A process model for handling customer complaints may include steps like "Receive Complaint," "Assess Issue," "Assign to Representative," and "Resolve Complaint."</p>
+<h4 id="process-optimization">Process Optimization</h4>
+<p>The practice of making changes to a process to improve its efficiency, effectiveness, or adaptability. </p>
+<p>For instance, automating certain repetitive tasks in a payroll process can be a form of process optimization that reduces processing time.</p>
+<h4 id="resource">Resource</h4>
+<p>Any entity (person, machine, system) that performs or supports activities within a business process. </p>
+<p><strong>Example</strong>: In a manufacturing process, resources might include operators, assembly line robots, and quality control software.</p>
+<h4 id="root-cause-analysis">Root Cause Analysis</h4>
+<p>A method used to identify the fundamental reason for a problem or defect within a process. If customer complaints about late deliveries are increasing, root cause analysis might reveal that delays in the supply chain are the primary issue.</p>
+<h4 id="throughput-time">Throughput Time</h4>
+<p>The total time taken from the start to the end of a process or case, encompassing all included activities and delays. </p>
+<p><strong>Example</strong>: If a customer service ticket is opened on Monday and resolved on Wednesday, the throughput time for that ticket is two days.</p>
+<h4 id="timestamp">Timestamp</h4>
+<p>A specific date and time recorded for each event within a log file, used to sequence and analyze the flow of activities within a process. In a shipping process, a timestamp might record the exact moment a package was dispatched from the warehouse.</p>
+<h4 id="variant">Variant</h4>
+<p>A unique sequence of activities that occurs in a business process, representing a specific way in which the process is executed. For instance, in an insurance claim process, one variant might involve direct approval, while another requires further investigation before approval.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../concepts/gnn/" class="md-footer__link md-footer__link--prev" aria-label="Previous: GNN">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                GNN
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../contact/" class="md-footer__link md-footer__link--next" aria-label="Next: Contact">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Contact
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>

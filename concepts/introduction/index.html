@@ -12,21 +12,21 @@
         <meta name="author" content="Dan McCreary">
       
       
-        <link rel="canonical" href="https://dmccrearytg.github.io/tg-process-mining/data-model/">
+        <link rel="canonical" href="https://dmccrearytg.github.io/tg-process-mining/concepts/introduction/">
       
       
       
       
-      <link rel="icon" href="../img/favicon.ico">
+      <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
     
     
       
-        <title>Customer 360 Data Model - TigerGraph Process Mining Demo</title>
+        <title>Introduction to Process Mining Concepts - TigerGraph Process Mining Demo</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
       
       
 
@@ -45,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#customer-360-data-model" class="md-skip">
+        <a href="#introduction-to-process-mining-concepts" class="md-skip">
           Skip to content
         </a>
       
@@ -80,9 +80,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="TigerGraph Process Mining Demo" class="md-header__button md-logo" aria-label="TigerGraph Process Mining Demo" data-md-component="logo">
+    <a href="../.." title="TigerGraph Process Mining Demo" class="md-header__button md-logo" aria-label="TigerGraph Process Mining Demo" data-md-component="logo">
       
-  <img src="../img/tg-logo-small.png" alt="logo">
+  <img src="../../img/tg-logo-small.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Customer 360 Data Model
+              Introduction to Process Mining Concepts
             
           </span>
         </div>
@@ -186,9 +186,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="TigerGraph Process Mining Demo" class="md-nav__button md-logo" aria-label="TigerGraph Process Mining Demo" data-md-component="logo">
+    <a href="../.." title="TigerGraph Process Mining Demo" class="md-nav__button md-logo" aria-label="TigerGraph Process Mining Demo" data-md-component="logo">
       
-  <img src="../img/tg-logo-small.png" alt="logo">
+  <img src="../../img/tg-logo-small.png" alt="logo">
 
     </a>
     TigerGraph Process Mining Demo
@@ -215,7 +215,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -235,7 +235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
+      <a href="../../about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -255,7 +255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../use-cases/" class="md-nav__link">
+      <a href="../../use-cases/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -275,7 +275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../why-graph/" class="md-nav__link">
+      <a href="../../why-graph/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -316,7 +316,7 @@
         
   
   
-    <a href="../concepts/" class="md-nav__link">
+    <a href="../" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -342,7 +342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../glossary/" class="md-nav__link">
+      <a href="../../glossary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -362,7 +362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contact/" class="md-nav__link">
+      <a href="../../contact/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -395,6 +395,104 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-event-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Event Logs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Case
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-activity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Activity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-timestamp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Timestamp
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-process-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Process Discovery
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-conformance-checking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Conformance Checking
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-performance-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 7: Performance Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-8-variant-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 8: Variant Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-9-root-cause-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 9: Root Cause Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-10-process-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 10: Process Optimization
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -411,8 +509,28 @@
   
 
 
-<h1 id="customer-360-data-model">Customer 360 Data Model</h1>
-<p><img alt="" src="./img/" /></p>
+<h1 id="introduction-to-process-mining-concepts">Introduction to Process Mining Concepts</h1>
+<h2 id="step-1-event-logs">Step 1: <strong>Event Logs</strong></h2>
+<p>The foundational data source in process mining, event logs capture the sequence of events within a process, including timestamps, case IDs, and event types. The first step in any process mining effort is to gather and prepare these logs for analysis.</p>
+<h2 id="step-2-case">Step 2: <strong>Case</strong></h2>
+<p>A case represents a single instance of the process being analyzed. In event logs, cases are identified by unique IDs and are essential for grouping related events together to understand the sequence of activities for each instance.</p>
+<h2 id="step-3-activity">Step 3: <strong>Activity</strong></h2>
+<p>An activity is a specific task or action within a process. Activities are the building blocks of process models and are derived from the events recorded in the event logs.</p>
+<h2 id="step-4-timestamp">Step 4: <strong>Timestamp</strong></h2>
+<p>Timestamps are the recorded times at which events occur. They are crucial for sequencing events within a case, calculating durations, and analyzing the timing and order of activities in the process.</p>
+<h2 id="step-5-process-discovery">Step 5: <strong>Process Discovery</strong></h2>
+<p>Process discovery involves automatically generating a visual or structured representation (model) of the process from the event logs. This step reveals the actual process flow as it happens in practice, which might differ from the intended process.</p>
+<h2 id="step-6-conformance-checking">Step 6: <strong>Conformance Checking</strong></h2>
+<p>Conformance checking compares the discovered process model against a predefined (or ideal) process model. This step identifies deviations, inefficiencies, and non-compliant behavior within the process.</p>
+<h2 id="step-7-performance-analysis">Step 7: <strong>Performance Analysis</strong></h2>
+<p>This step involves analyzing the timing and efficiency of the process, using metrics like throughput time, waiting times, and bottleneck identification. Performance analysis helps quantify how well the process operates.</p>
+<h2 id="step-8-variant-analysis">Step 8: <strong>Variant Analysis</strong></h2>
+<p>Variant analysis identifies different ways (variants) in which a process is executed. It compares these variants to understand why certain cases follow different paths and what impact these variations have on process outcomes.</p>
+<h2 id="step-9-root-cause-analysis">Step 9: <strong>Root Cause Analysis</strong></h2>
+<p>Once deviations or inefficiencies are identified, root cause analysis is used to understand the underlying reasons for these issues. This analysis can involve looking at specific cases, activities, or conditions that lead to process problems.</p>
+<h2 id="step-10-process-optimization">Step 10: <strong>Process Optimization</strong></h2>
+<p>The final step in process mining involves using insights gained from the previous steps to optimize the process. This can include redesigning the process, automating tasks, reallocating resources, or implementing new controls to improve overall efficiency and compliance.</p>
+<p>These concepts form the core steps and techniques in solving a process mining problem, guiding the analysis from raw data to actionable improvements.</p>
 
 
 
@@ -467,10 +585,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
   </body>

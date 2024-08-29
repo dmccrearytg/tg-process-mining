@@ -12,13 +12,9 @@
         <meta name="author" content="Dan McCreary">
       
       
-        <link rel="canonical" href="https://dmccrearytg.github.io/tg-process-mining/concepts/gnn/">
+        <link rel="canonical" href="https://dmccrearytg.github.io/tg-process-mining/concepts/event-logs/">
       
       
-        <link rel="prev" href="../">
-      
-      
-        <link rel="next" href="../../glossary/">
       
       
       <link rel="icon" href="../../img/favicon.ico">
@@ -26,7 +22,7 @@
     
     
       
-        <title>GNN - TigerGraph Process Mining Demo</title>
+        <title>Event Logs - TigerGraph Process Mining Demo</title>
       
     
     
@@ -68,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#use-of-gnns-to-predict-future-events" class="md-skip">
+        <a href="#event-logs" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GNN
+              Event Logs
             
           </span>
         </div>
@@ -296,8 +292,6 @@
       
   
   
-    
-  
   
   
     
@@ -313,195 +307,29 @@
     
     
       
+        
+        
+      
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
-        
-          
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
-              
+  
+  
+    <a href="../" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     Concepts
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            Concepts
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+        <span class="md-nav__icon md-icon"></span>
       
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    GNN
-  </span>
+    </a>
   
 
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    GNN
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-graph-representation" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Graph Representation:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-feature-representation" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Feature Representation:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-graph-construction-for-gnn" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Graph Construction for GNN:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-gnn-model-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. GNN Model Architecture:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-training-the-gnn" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Training the GNN:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-prediction-process" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Prediction Process:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-handling-duration-in-prediction" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Handling Duration in Prediction:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-example-use-case" class="md-nav__link">
-    <span class="md-ellipsis">
-      8. Example Use Case:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#9-potential-gnn-models" class="md-nav__link">
-    <span class="md-ellipsis">
-      9. Potential GNN Models:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#10-implementation-tips" class="md-nav__link">
-    <span class="md-ellipsis">
-      10. Implementation Tips:
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -574,92 +402,137 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-graph-representation" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Graph Representation:
+      Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-event-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Event Logs
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#2-feature-representation" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-process-for-analyzing-event-logs" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Feature Representation:
+      Step-by-Step Process for Analyzing Event Logs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step-by-Step Process for Analyzing Event Logs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-data-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Data Collection
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#3-graph-construction-for-gnn" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-data-preprocessing" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Graph Construction for GNN:
+      2. Data Preprocessing
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#4-gnn-model-architecture" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#3-process-discovery" class="md-nav__link">
     <span class="md-ellipsis">
-      4. GNN Model Architecture:
+      3. Process Discovery
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#5-training-the-gnn" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#4-conformance-checking" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Training the GNN:
+      4. Conformance Checking
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#6-prediction-process" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#5-performance-analysis" class="md-nav__link">
     <span class="md-ellipsis">
-      6. Prediction Process:
+      5. Performance Analysis
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#7-handling-duration-in-prediction" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#6-anomaly-detection" class="md-nav__link">
     <span class="md-ellipsis">
-      7. Handling Duration in Prediction:
+      6. Anomaly Detection
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#8-example-use-case" class="md-nav__link">
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#challenges-of-missing-data-in-event-logs" class="md-nav__link">
     <span class="md-ellipsis">
-      8. Example Use Case:
+      Challenges of Missing Data in Event Logs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Challenges of Missing Data in Event Logs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-problems-due-to-missing-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Problems Due to Missing Data
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#9-potential-gnn-models" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-strategies-to-overcome-missing-data-challenges" class="md-nav__link">
     <span class="md-ellipsis">
-      9. Potential GNN Models:
+      2. Strategies to Overcome Missing Data Challenges
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#10-implementation-tips" class="md-nav__link">
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
     <span class="md-ellipsis">
-      10. Implementation Tips:
+      Conclusion
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -681,63 +554,132 @@
   
 
 
-<h1 id="use-of-gnns-to-predict-future-events">Use of GNNs to Predict Future Events</h1>
-<p>Graph Neural Networks (GNNs) can be used to predict future events in a graph where the vertices represent events, and the edges (e.g., <code>NEXT_EVENT</code> and <code>PREV_EVENT</code>) contain information such as duration. Here's how this can be done:</p>
-<h3 id="1-graph-representation">1. <strong>Graph Representation:</strong></h3>
+<h1 id="event-logs">Event Logs</h1>
+<p>Gathering precise data from event logs is the first step in process mining.</p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Event logs</strong> are chronological records of events that capture the activities occurring within a system, process, or application. Each entry in an event log typically contains specific information such as the event name, timestamp, associated entities (like users or processes), and possibly additional metadata like status codes or resource identifiers. Event logs serve as a foundational data source for process mining, providing insights into how processes are executed, where bottlenecks occur, and how different events relate to each other.</p>
+<h3 id="types-of-event-logs">Types of Event Logs</h3>
+<p>Event logs can vary significantly depending on the context in which they are generated. Here are some common types:</p>
+<ol>
+<li>
+<p><strong>System Event Logs</strong>:</p>
 <ul>
-<li><strong>Vertices</strong>: Each vertex in the graph represents an event.</li>
-<li><strong>Edges</strong>: The edges represent the relationship between events, such as which event follows another (<code>NEXT_EVENT</code>) or precedes another (<code>PREV_EVENT</code>). These edges contain a <code>duration</code> attribute that indicates the time between the events.</li>
+<li><strong>Description</strong>: These logs are generated by operating systems or server applications and record events related to system activities like user logins, file access, or system errors.</li>
+<li><strong>Example</strong>: A Windows event log might capture events such as "User Login," "File Created," or "System Shutdown."</li>
+<li>
+<p><strong>Application Event Logs</strong>:</p>
+</li>
+<li>
+<p><strong>Description</strong>: Generated by software applications, these logs capture events specific to the application's operation, such as user actions, errors, or transactions.</p>
+</li>
+<li><strong>Example</strong>: A web application log might record events like "User Registered," "Order Placed," or "Error 404: Page Not Found."</li>
+<li>
+<p><strong>Business Process Event Logs</strong>:</p>
+</li>
+<li>
+<p><strong>Description</strong>: These logs record events related to specific business processes, tracking the flow of activities from start to finish.</p>
+</li>
+<li><strong>Example</strong>: An ERP system might generate logs for a purchase order process, recording events like "Order Created," "Order Approved," and "Payment Processed."</li>
+<li>
+<p><strong>Security Event Logs</strong>:</p>
+</li>
+<li>
+<p><strong>Description</strong>: Focused on security-related events, these logs capture incidents like login attempts, access control violations, and security alerts.</p>
+</li>
+<li><strong>Example</strong>: A security log might include events such as "Failed Login Attempt," "Unauthorized Access Attempt," or "Firewall Breach Detected."</li>
+<li>
+<p><strong>IoT Event Logs</strong>:</p>
+</li>
+<li>
+<p><strong>Description</strong>: Generated by Internet of Things (IoT) devices, these logs capture data from sensors, actuators, and other connected devices.</p>
+</li>
+<li><strong>Example</strong>: A smart home system might generate logs for events like "Temperature Sensor Activated," "Door Opened," or "Motion Detected."</li>
 </ul>
-<h3 id="2-feature-representation">2. <strong>Feature Representation:</strong></h3>
+</li>
+</ol>
+<h3 id="step-by-step-process-for-analyzing-event-logs">Step-by-Step Process for Analyzing Event Logs</h3>
+<p>Analyzing event logs involves several steps, each aimed at extracting meaningful insights from raw event data. Here's a detailed overview of the process:</p>
+<h4 id="1-data-collection">1. <strong>Data Collection</strong></h4>
 <ul>
-<li><strong>Vertex Features</strong>: Each event vertex can have features like event type, timestamp, associated data, etc.</li>
-<li><strong>Edge Features</strong>: The edges contain the duration, which is a crucial feature for predicting the timing of future events.</li>
+<li><strong>Objective</strong>: Gather event logs from various sources such as servers, applications, IoT devices, or business systems.</li>
+<li><strong>Process</strong>:<ul>
+<li>Identify and connect to the relevant log sources.</li>
+<li>Extract logs using automated tools or manual processes.</li>
+<li>Ensure that logs are collected in a standardized format to facilitate analysis.</li>
 </ul>
-<h3 id="3-graph-construction-for-gnn">3. <strong>Graph Construction for GNN:</strong></h3>
+</li>
+</ul>
+<h4 id="2-data-preprocessing">2. <strong>Data Preprocessing</strong></h4>
 <ul>
-<li>The graph is constructed where the event vertices are connected via directed edges (<code>NEXT_EVENT</code>/<code>PREV_EVENT</code>) with the duration as a feature of the edge.</li>
-<li>This graph is then fed into a GNN, where the model can learn the temporal and sequential dependencies between events.</li>
+<li><strong>Objective</strong>: Clean, normalize, and prepare the event data for analysis.</li>
+<li><strong>Process</strong>:<ul>
+<li><strong>Log Parsing</strong>: Convert raw log entries into a structured format (e.g., tables or JSON objects).</li>
+<li><strong>Data Cleaning</strong>: Remove duplicates, filter irrelevant events, and correct any obvious errors in the data.</li>
+<li><strong>Timestamp Normalization</strong>: Ensure all events are synchronized to a common time format, especially when logs come from multiple time zones or systems.</li>
+<li><strong>Event Correlation</strong>: Link related events across different logs to form a cohesive view of the process (e.g., correlating a "User Login" event with a "File Access" event).</li>
 </ul>
-<h3 id="4-gnn-model-architecture">4. <strong>GNN Model Architecture:</strong></h3>
+</li>
+</ul>
+<h4 id="3-process-discovery">3. <strong>Process Discovery</strong></h4>
 <ul>
-<li><strong>Input Layer</strong>: The input layer processes the features of the event vertices and the edge features (durations).</li>
-<li><strong>Graph Convolutional Layers</strong>: These layers propagate information between connected vertices. For instance, a message-passing mechanism can aggregate information from neighboring events (previous or next) to update the representation of the current event vertex.</li>
-<li><strong>Temporal Embedding</strong>: The duration feature can be explicitly used to create temporal embeddings that allow the model to learn the time-based dependencies between events.</li>
-<li><strong>Recurrent Layer (optional)</strong>: In some cases, a recurrent layer (like an LSTM or GRU) can be used to model the sequential nature of events further.</li>
+<li><strong>Objective</strong>: Generate a process model that represents the flow of activities as captured by the event logs.</li>
+<li><strong>Process</strong>:<ul>
+<li><strong>Sequential Ordering</strong>: Arrange events in chronological order for each case or instance.</li>
+<li><strong>Pattern Detection</strong>: Identify recurring sequences of events that represent typical workflows.</li>
+<li><strong>Model Construction</strong>: Use process mining tools to automatically construct a visual process model, such as a flowchart or Petri net, from the event sequences.</li>
 </ul>
-<h3 id="5-training-the-gnn">5. <strong>Training the GNN:</strong></h3>
+</li>
+</ul>
+<h4 id="4-conformance-checking">4. <strong>Conformance Checking</strong></h4>
 <ul>
-<li><strong>Loss Function</strong>: The loss function is typically designed to minimize the difference between predicted and actual future event times or to classify the type of future event correctly.</li>
-<li><strong>Supervision</strong>: The model can be supervised by using historical event sequences where the ground truth for future events is known.</li>
+<li><strong>Objective</strong>: Compare the discovered process model with an ideal or predefined model to identify deviations.</li>
+<li><strong>Process</strong>:<ul>
+<li><strong>Alignment</strong>: Map the events from the log to the corresponding steps in the predefined model.</li>
+<li><strong>Deviation Detection</strong>: Highlight any discrepancies where the actual process deviates from the expected workflow, such as skipped steps or additional activities.</li>
+<li><strong>Root Cause Analysis</strong>: Investigate the reasons for deviations, such as process bottlenecks, errors, or exceptional cases.</li>
 </ul>
-<h3 id="6-prediction-process">6. <strong>Prediction Process:</strong></h3>
+</li>
+</ul>
+<h4 id="5-performance-analysis">5. <strong>Performance Analysis</strong></h4>
 <ul>
-<li><strong>Prediction</strong>: For a given current graph of events, the trained GNN can predict the next event(s) by considering the learned relationships (from the graph structure and edge durations) and output a prediction for the next event's occurrence time or the type of event that will happen next.</li>
-<li><strong>Inference</strong>: During inference, you can use the GNN to predict not just the immediate next event but potentially a sequence of future events by iteratively updating the graph with predicted events and re-applying the model.</li>
+<li><strong>Objective</strong>: Analyze the performance of the process by examining metrics like throughput time, resource utilization, and bottlenecks.</li>
+<li><strong>Process</strong>:<ul>
+<li><strong>Time Analysis</strong>: Calculate the time taken for each process instance, activity, and transition.</li>
+<li><strong>Bottleneck Identification</strong>: Identify stages where processes are delayed, resources are under or over-utilized, or there is a high rate of rework.</li>
+<li><strong>Optimization Opportunities</strong>: Highlight areas where process improvements can be made, such as by automating repetitive tasks or reallocating resources.</li>
 </ul>
-<h3 id="7-handling-duration-in-prediction">7. <strong>Handling Duration in Prediction:</strong></h3>
+</li>
+</ul>
+<h4 id="6-anomaly-detection">6. <strong>Anomaly Detection</strong></h4>
 <ul>
-<li>The duration between events is key to predicting future events. The GNN uses the duration in the edge features to inform predictions of the timing of future events.</li>
-<li>By learning from the historical duration data, the model can predict how long until the next event occurs.</li>
+<li><strong>Objective</strong>: Identify unusual patterns or events that deviate significantly from the norm, indicating potential issues or opportunities.</li>
+<li><strong>Process</strong>:<ul>
+<li><strong>Statistical Analysis</strong>: Use statistical methods to detect outliers in event frequency, sequence, or timing.</li>
+<li><strong>Machine Learning</strong>: Apply machine learning models to predict and flag anomalies based on historical event log data.</li>
+<li><strong>Investigation</strong>: Analyze flagged anomalies to determine their cause and potential impact on the overall process.</li>
 </ul>
-<h3 id="8-example-use-case">8. <strong>Example Use Case:</strong></h3>
+</li>
+</ul>
+<h3 id="challenges-of-missing-data-in-event-logs">Challenges of Missing Data in Event Logs</h3>
+<p><strong>Missing data</strong> in event logs can pose significant challenges to process mining and analysis. Missing events can lead to incomplete or inaccurate process models, flawed conformance checks, and misleading performance metrics. Here's a discussion of common problems associated with missing data and strategies to overcome these challenges:</p>
+<h4 id="1-problems-due-to-missing-data">1. <strong>Problems Due to Missing Data</strong></h4>
 <ul>
-<li>Suppose you have a graph where each vertex represents a customer order event, and edges represent the sequence of orders, with the duration representing the time between orders.</li>
-<li>The GNN can learn to predict when the next order will happen based on the past sequence of orders and durations between them.</li>
+<li><strong>Incomplete Process Models</strong>: Missing events can result in process models that do not fully capture the actual workflow, leading to gaps in understanding.</li>
+<li><strong>Skewed Performance Metrics</strong>: If critical timestamps are missing, calculations like throughput time or cycle time may be inaccurate, skewing performance analysis.</li>
+<li><strong>Inaccurate Conformance Checking</strong>: Missing events can cause the actual process to appear more conformant to the ideal model than it actually is, leading to false conclusions.</li>
+<li><strong>Challenges in Anomaly Detection</strong>: Anomalies might go undetected if key data points are missing, reducing the effectiveness of anomaly detection efforts.</li>
 </ul>
-<h3 id="9-potential-gnn-models">9. <strong>Potential GNN Models:</strong></h3>
+<h4 id="2-strategies-to-overcome-missing-data-challenges">2. <strong>Strategies to Overcome Missing Data Challenges</strong></h4>
 <ul>
-<li><strong>Graph Convolutional Networks (GCN)</strong>: To learn node embeddings considering the local structure.</li>
-<li><strong>Graph Attention Networks (GAT)</strong>: To learn which events (nodes) are more influential when predicting the next event.</li>
-<li><strong>Temporal GNNs</strong>: Specifically designed to handle temporal information and predict future events.</li>
+<li><strong>Data Imputation</strong>: Use statistical methods or machine learning models to estimate and fill in missing data points based on available information. For instance, if a timestamp is missing, it might be estimated based on the average time between the previous and next events.</li>
+<li><strong>Process Flexibility</strong>: Design process models that can handle optional or missing steps. This approach acknowledges that some events might not always occur but allows the model to remain valid and useful.</li>
+<li><strong>Error Logging and Alerts</strong>: Implement robust logging mechanisms that detect and flag missing or incomplete data at the point of data collection, triggering alerts for immediate investigation.</li>
+<li><strong>Data Redundancy</strong>: Collect data from multiple sources or systems to ensure that if one source is missing events, the others can provide the needed information. For example, cross-referencing system logs with user activity logs might fill gaps.</li>
+<li><strong>User Feedback Loops</strong>: Implement feedback loops where users can manually confirm or input missing data, ensuring that the most critical data points are captured accurately.</li>
+<li><strong>Incremental Data Collection</strong>: Revisit and collect additional data at later stages if missing information is discovered, ensuring that the event logs remain as complete as possible over time.</li>
 </ul>
-<h3 id="10-implementation-tips">10. <strong>Implementation Tips:</strong></h3>
-<ul>
-<li><strong>Data Preparation</strong>: Ensure that your graph data is prepared with the correct vertex and edge features, especially focusing on accurate duration data.</li>
-<li><strong>Model Tuning</strong>: Experiment with different GNN architectures and hyperparameters, such as the number of layers, embedding size, and learning rate, to optimize performance.</li>
-<li><strong>Temporal Information</strong>: Consider incorporating additional temporal features, such as time of day or day of the week, which could improve predictions.</li>
-</ul>
-<p>By applying a GNN in this manner, you can effectively model and predict future events in a graph, leveraging the sequential and temporal relationships embedded in the graph's structure and edge features.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Event logs are crucial for understanding and analyzing business processes, providing detailed records of activities that can be mined for insights. However, analyzing event logs requires careful preprocessing, accurate modeling, and robust strategies to address challenges like missing data. By applying these methods, organizations can use event logs to improve process efficiency, ensure compliance, and drive informed decision-making.</p>
 
 
 
@@ -768,44 +710,6 @@
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-          
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              <div class="md-ellipsis">
-                Introduction
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../../glossary/" class="md-footer__link md-footer__link--next" aria-label="Next: Glossary">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Glossary
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
