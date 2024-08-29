@@ -14,6 +14,7 @@ nav:
   - Why Graph: why-graph.md
   - Concepts:
     - Introduction: concepts/index.md
+    - Event Logs: concepts/event-logs.md
     - GNN: concepts/gnn.md
   - Glossary: glossary.md
   - Contact: contact.md
