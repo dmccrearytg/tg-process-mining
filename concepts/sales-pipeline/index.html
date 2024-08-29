@@ -12,13 +12,13 @@
         <meta name="author" content="Dan McCreary">
       
       
-        <link rel="canonical" href="https://dmccrearytg.github.io/tg-process-mining/concepts/event-logs/">
+        <link rel="canonical" href="https://dmccrearytg.github.io/tg-process-mining/concepts/sales-pipeline/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../event-logs/">
       
       
-        <link rel="next" href="../sales-pipeline/">
+        <link rel="next" href="../gnn/">
       
       
       <link rel="icon" href="../../img/favicon.ico">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Event Logs - TigerGraph Process Mining Demo</title>
+        <title>Sales Pipeline - TigerGraph Process Mining Demo</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#event-logs" class="md-skip">
+        <a href="#sales-pipeline-example" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Event Logs
+              Sales Pipeline
             
           </span>
         </div>
@@ -357,6 +357,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../event-logs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Event Logs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -373,7 +394,7 @@
           
   
   <span class="md-ellipsis">
-    Event Logs
+    Sales Pipeline
   </span>
   
 
@@ -384,7 +405,7 @@
         
   
   <span class="md-ellipsis">
-    Event Logs
+    Sales Pipeline
   </span>
   
 
@@ -406,83 +427,82 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
+  <a href="#stages-in-an-enterprise-business-sale" class="md-nav__link">
     <span class="md-ellipsis">
-      Introduction
+      Stages in an Enterprise Business Sale
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Introduction">
+    <nav class="md-nav" aria-label="Stages in an Enterprise Business Sale">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#types-of-event-logs" class="md-nav__link">
+  <a href="#1-lead" class="md-nav__link">
     <span class="md-ellipsis">
-      Types of Event Logs
+      1.  Lead
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-by-step-process-for-analyzing-event-logs" class="md-nav__link">
+  <a href="#2-qualified-lead" class="md-nav__link">
     <span class="md-ellipsis">
-      Step-by-Step Process for Analyzing Event Logs
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Step-by-Step Process for Analyzing Event Logs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-data-collection" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Data Collection
+      2.  Qualified Lead
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-data-preprocessing" class="md-nav__link">
+  <a href="#3-opportunity" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Data Preprocessing
+      3.  Opportunity
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-process-discovery" class="md-nav__link">
+  <a href="#4-proposal" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Process Discovery
+      4.  Proposal
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-conformance-checking" class="md-nav__link">
+  <a href="#5-negotiation" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Conformance Checking
+      5.  Negotiation
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-performance-analysis" class="md-nav__link">
+  <a href="#6-closed-won" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Performance Analysis
+      6.  Closed-Won
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#6-anomaly-detection" class="md-nav__link">
+  <a href="#7-implementation" class="md-nav__link">
     <span class="md-ellipsis">
-      6. Anomaly Detection
+      7.  Implementation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.  Production
     </span>
   </a>
   
@@ -492,44 +512,120 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#challenges-of-missing-data-in-event-logs" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#key-performance-metrics-for-a-sales-pipeline" class="md-nav__link">
     <span class="md-ellipsis">
-      Challenges of Missing Data in Event Logs
+      Key Performance Metrics for a Sales Pipeline
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Challenges of Missing Data in Event Logs">
+    <nav class="md-nav" aria-label="Key Performance Metrics for a Sales Pipeline">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-problems-due-to-missing-data" class="md-nav__link">
+  <a href="#1-number-of-leads" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Problems Due to Missing Data
+      1: Number of Leads
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-strategies-to-overcome-missing-data-challenges" class="md-nav__link">
+  <a href="#2-lead-conversion-rate" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Strategies to Overcome Missing Data Challenges
+      2: Lead Conversion Rate
     </span>
   </a>
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#3-opportunity-conversion-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      3: Opportunity Conversion Rate
+    </span>
+  </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
+  <a href="#4-win-rate-close-rate" class="md-nav__link">
     <span class="md-ellipsis">
-      Conclusion
+      4: Win Rate (Close Rate)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-average-deal-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      5: Average Deal Size
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-sales-cycle-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      6: Sales Cycle Length
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-pipeline-velocity" class="md-nav__link">
+    <span class="md-ellipsis">
+      7: Pipeline Velocity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-sales-pipeline-coverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      8: Sales Pipeline Coverage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-lead-response-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      9: Lead Response Time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-lost-opportunity-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      10: Lost Opportunity Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-customer-acquisition-cost-cac" class="md-nav__link">
+    <span class="md-ellipsis">
+      11: Customer Acquisition Cost (CAC)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-customer-lifetime-value-cltv" class="md-nav__link">
+    <span class="md-ellipsis">
+      12: Customer Lifetime Value (CLTV)
     </span>
   </a>
   
@@ -544,27 +640,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../sales-pipeline/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Sales Pipeline
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -665,83 +740,82 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
+  <a href="#stages-in-an-enterprise-business-sale" class="md-nav__link">
     <span class="md-ellipsis">
-      Introduction
+      Stages in an Enterprise Business Sale
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Introduction">
+    <nav class="md-nav" aria-label="Stages in an Enterprise Business Sale">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#types-of-event-logs" class="md-nav__link">
+  <a href="#1-lead" class="md-nav__link">
     <span class="md-ellipsis">
-      Types of Event Logs
+      1.  Lead
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-by-step-process-for-analyzing-event-logs" class="md-nav__link">
+  <a href="#2-qualified-lead" class="md-nav__link">
     <span class="md-ellipsis">
-      Step-by-Step Process for Analyzing Event Logs
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Step-by-Step Process for Analyzing Event Logs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-data-collection" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Data Collection
+      2.  Qualified Lead
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-data-preprocessing" class="md-nav__link">
+  <a href="#3-opportunity" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Data Preprocessing
+      3.  Opportunity
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-process-discovery" class="md-nav__link">
+  <a href="#4-proposal" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Process Discovery
+      4.  Proposal
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-conformance-checking" class="md-nav__link">
+  <a href="#5-negotiation" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Conformance Checking
+      5.  Negotiation
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-performance-analysis" class="md-nav__link">
+  <a href="#6-closed-won" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Performance Analysis
+      6.  Closed-Won
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#6-anomaly-detection" class="md-nav__link">
+  <a href="#7-implementation" class="md-nav__link">
     <span class="md-ellipsis">
-      6. Anomaly Detection
+      7.  Implementation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.  Production
     </span>
   </a>
   
@@ -751,44 +825,120 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#challenges-of-missing-data-in-event-logs" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#key-performance-metrics-for-a-sales-pipeline" class="md-nav__link">
     <span class="md-ellipsis">
-      Challenges of Missing Data in Event Logs
+      Key Performance Metrics for a Sales Pipeline
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Challenges of Missing Data in Event Logs">
+    <nav class="md-nav" aria-label="Key Performance Metrics for a Sales Pipeline">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-problems-due-to-missing-data" class="md-nav__link">
+  <a href="#1-number-of-leads" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Problems Due to Missing Data
+      1: Number of Leads
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-strategies-to-overcome-missing-data-challenges" class="md-nav__link">
+  <a href="#2-lead-conversion-rate" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Strategies to Overcome Missing Data Challenges
+      2: Lead Conversion Rate
     </span>
   </a>
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#3-opportunity-conversion-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      3: Opportunity Conversion Rate
+    </span>
+  </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
+  <a href="#4-win-rate-close-rate" class="md-nav__link">
     <span class="md-ellipsis">
-      Conclusion
+      4: Win Rate (Close Rate)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-average-deal-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      5: Average Deal Size
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-sales-cycle-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      6: Sales Cycle Length
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-pipeline-velocity" class="md-nav__link">
+    <span class="md-ellipsis">
+      7: Pipeline Velocity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-sales-pipeline-coverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      8: Sales Pipeline Coverage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-lead-response-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      9: Lead Response Time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-lost-opportunity-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      10: Lost Opportunity Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-customer-acquisition-cost-cac" class="md-nav__link">
+    <span class="md-ellipsis">
+      11: Customer Acquisition Cost (CAC)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-customer-lifetime-value-cltv" class="md-nav__link">
+    <span class="md-ellipsis">
+      12: Customer Lifetime Value (CLTV)
     </span>
   </a>
   
@@ -817,132 +967,64 @@
   
 
 
-<h1 id="event-logs">Event Logs</h1>
-<p>Gathering precise data from event logs is the first step in process mining.</p>
-<h2 id="introduction">Introduction</h2>
-<p><strong>Event logs</strong> are chronological records of events that capture the activities occurring within a system, process, or application. Each entry in an event log typically contains specific information such as the event name, timestamp, associated entities (like users or processes), and possibly additional metadata like status codes or resource identifiers. Event logs serve as a foundational data source for process mining, providing insights into how processes are executed, where bottlenecks occur, and how different events relate to each other.</p>
-<h3 id="types-of-event-logs">Types of Event Logs</h3>
-<p>Event logs can vary significantly depending on the context in which they are generated. Here are some common types:</p>
-<ol>
-<li>
-<p><strong>System Event Logs</strong>:</p>
-<ul>
-<li><strong>Description</strong>: These logs are generated by operating systems or server applications and record events related to system activities like user logins, file access, or system errors.</li>
-<li><strong>Example</strong>: A Windows event log might capture events such as "User Login," "File Created," or "System Shutdown."</li>
-<li>
-<p><strong>Application Event Logs</strong>:</p>
-</li>
-<li>
-<p><strong>Description</strong>: Generated by software applications, these logs capture events specific to the application's operation, such as user actions, errors, or transactions.</p>
-</li>
-<li><strong>Example</strong>: A web application log might record events like "User Registered," "Order Placed," or "Error 404: Page Not Found."</li>
-<li>
-<p><strong>Business Process Event Logs</strong>:</p>
-</li>
-<li>
-<p><strong>Description</strong>: These logs record events related to specific business processes, tracking the flow of activities from start to finish.</p>
-</li>
-<li><strong>Example</strong>: An ERP system might generate logs for a purchase order process, recording events like "Order Created," "Order Approved," and "Payment Processed."</li>
-<li>
-<p><strong>Security Event Logs</strong>:</p>
-</li>
-<li>
-<p><strong>Description</strong>: Focused on security-related events, these logs capture incidents like login attempts, access control violations, and security alerts.</p>
-</li>
-<li><strong>Example</strong>: A security log might include events such as "Failed Login Attempt," "Unauthorized Access Attempt," or "Firewall Breach Detected."</li>
-<li>
-<p><strong>IoT Event Logs</strong>:</p>
-</li>
-<li>
-<p><strong>Description</strong>: Generated by Internet of Things (IoT) devices, these logs capture data from sensors, actuators, and other connected devices.</p>
-</li>
-<li><strong>Example</strong>: A smart home system might generate logs for events like "Temperature Sensor Activated," "Door Opened," or "Motion Detected."</li>
-</ul>
-</li>
-</ol>
-<h3 id="step-by-step-process-for-analyzing-event-logs">Step-by-Step Process for Analyzing Event Logs</h3>
-<p>Analyzing event logs involves several steps, each aimed at extracting meaningful insights from raw event data. Here's a detailed overview of the process:</p>
-<h4 id="1-data-collection">1. <strong>Data Collection</strong></h4>
-<ul>
-<li><strong>Objective</strong>: Gather event logs from various sources such as servers, applications, IoT devices, or business systems.</li>
-<li><strong>Process</strong>:<ul>
-<li>Identify and connect to the relevant log sources.</li>
-<li>Extract logs using automated tools or manual processes.</li>
-<li>Ensure that logs are collected in a standardized format to facilitate analysis.</li>
-</ul>
-</li>
-</ul>
-<h4 id="2-data-preprocessing">2. <strong>Data Preprocessing</strong></h4>
-<ul>
-<li><strong>Objective</strong>: Clean, normalize, and prepare the event data for analysis.</li>
-<li><strong>Process</strong>:<ul>
-<li><strong>Log Parsing</strong>: Convert raw log entries into a structured format (e.g., tables or JSON objects).</li>
-<li><strong>Data Cleaning</strong>: Remove duplicates, filter irrelevant events, and correct any obvious errors in the data.</li>
-<li><strong>Timestamp Normalization</strong>: Ensure all events are synchronized to a common time format, especially when logs come from multiple time zones or systems.</li>
-<li><strong>Event Correlation</strong>: Link related events across different logs to form a cohesive view of the process (e.g., correlating a "User Login" event with a "File Access" event).</li>
-</ul>
-</li>
-</ul>
-<h4 id="3-process-discovery">3. <strong>Process Discovery</strong></h4>
-<ul>
-<li><strong>Objective</strong>: Generate a process model that represents the flow of activities as captured by the event logs.</li>
-<li><strong>Process</strong>:<ul>
-<li><strong>Sequential Ordering</strong>: Arrange events in chronological order for each case or instance.</li>
-<li><strong>Pattern Detection</strong>: Identify recurring sequences of events that represent typical workflows.</li>
-<li><strong>Model Construction</strong>: Use process mining tools to automatically construct a visual process model, such as a flowchart or Petri net, from the event sequences.</li>
-</ul>
-</li>
-</ul>
-<h4 id="4-conformance-checking">4. <strong>Conformance Checking</strong></h4>
-<ul>
-<li><strong>Objective</strong>: Compare the discovered process model with an ideal or predefined model to identify deviations.</li>
-<li><strong>Process</strong>:<ul>
-<li><strong>Alignment</strong>: Map the events from the log to the corresponding steps in the predefined model.</li>
-<li><strong>Deviation Detection</strong>: Highlight any discrepancies where the actual process deviates from the expected workflow, such as skipped steps or additional activities.</li>
-<li><strong>Root Cause Analysis</strong>: Investigate the reasons for deviations, such as process bottlenecks, errors, or exceptional cases.</li>
-</ul>
-</li>
-</ul>
-<h4 id="5-performance-analysis">5. <strong>Performance Analysis</strong></h4>
-<ul>
-<li><strong>Objective</strong>: Analyze the performance of the process by examining metrics like throughput time, resource utilization, and bottlenecks.</li>
-<li><strong>Process</strong>:<ul>
-<li><strong>Time Analysis</strong>: Calculate the time taken for each process instance, activity, and transition.</li>
-<li><strong>Bottleneck Identification</strong>: Identify stages where processes are delayed, resources are under or over-utilized, or there is a high rate of rework.</li>
-<li><strong>Optimization Opportunities</strong>: Highlight areas where process improvements can be made, such as by automating repetitive tasks or reallocating resources.</li>
-</ul>
-</li>
-</ul>
-<h4 id="6-anomaly-detection">6. <strong>Anomaly Detection</strong></h4>
-<ul>
-<li><strong>Objective</strong>: Identify unusual patterns or events that deviate significantly from the norm, indicating potential issues or opportunities.</li>
-<li><strong>Process</strong>:<ul>
-<li><strong>Statistical Analysis</strong>: Use statistical methods to detect outliers in event frequency, sequence, or timing.</li>
-<li><strong>Machine Learning</strong>: Apply machine learning models to predict and flag anomalies based on historical event log data.</li>
-<li><strong>Investigation</strong>: Analyze flagged anomalies to determine their cause and potential impact on the overall process.</li>
-</ul>
-</li>
-</ul>
-<h3 id="challenges-of-missing-data-in-event-logs">Challenges of Missing Data in Event Logs</h3>
-<p><strong>Missing data</strong> in event logs can pose significant challenges to process mining and analysis. Missing events can lead to incomplete or inaccurate process models, flawed conformance checks, and misleading performance metrics. Here's a discussion of common problems associated with missing data and strategies to overcome these challenges:</p>
-<h4 id="1-problems-due-to-missing-data">1. <strong>Problems Due to Missing Data</strong></h4>
-<ul>
-<li><strong>Incomplete Process Models</strong>: Missing events can result in process models that do not fully capture the actual workflow, leading to gaps in understanding.</li>
-<li><strong>Skewed Performance Metrics</strong>: If critical timestamps are missing, calculations like throughput time or cycle time may be inaccurate, skewing performance analysis.</li>
-<li><strong>Inaccurate Conformance Checking</strong>: Missing events can cause the actual process to appear more conformant to the ideal model than it actually is, leading to false conclusions.</li>
-<li><strong>Challenges in Anomaly Detection</strong>: Anomalies might go undetected if key data points are missing, reducing the effectiveness of anomaly detection efforts.</li>
-</ul>
-<h4 id="2-strategies-to-overcome-missing-data-challenges">2. <strong>Strategies to Overcome Missing Data Challenges</strong></h4>
-<ul>
-<li><strong>Data Imputation</strong>: Use statistical methods or machine learning models to estimate and fill in missing data points based on available information. For instance, if a timestamp is missing, it might be estimated based on the average time between the previous and next events.</li>
-<li><strong>Process Flexibility</strong>: Design process models that can handle optional or missing steps. This approach acknowledges that some events might not always occur but allows the model to remain valid and useful.</li>
-<li><strong>Error Logging and Alerts</strong>: Implement robust logging mechanisms that detect and flag missing or incomplete data at the point of data collection, triggering alerts for immediate investigation.</li>
-<li><strong>Data Redundancy</strong>: Collect data from multiple sources or systems to ensure that if one source is missing events, the others can provide the needed information. For example, cross-referencing system logs with user activity logs might fill gaps.</li>
-<li><strong>User Feedback Loops</strong>: Implement feedback loops where users can manually confirm or input missing data, ensuring that the most critical data points are captured accurately.</li>
-<li><strong>Incremental Data Collection</strong>: Revisit and collect additional data at later stages if missing information is discovered, ensuring that the event logs remain as complete as possible over time.</li>
-</ul>
-<h3 id="conclusion">Conclusion</h3>
-<p>Event logs are crucial for understanding and analyzing business processes, providing detailed records of activities that can be mined for insights. However, analyzing event logs requires careful preprocessing, accurate modeling, and robust strategies to address challenges like missing data. By applying these methods, organizations can use event logs to improve process efficiency, ensure compliance, and drive informed decision-making.</p>
+<h1 id="sales-pipeline-example">Sales Pipeline Example</h1>
+<p>The sales pipeline is a good example of a process that can benefit from process mining.</p>
+<h2 id="stages-in-an-enterprise-business-sale">Stages in an Enterprise Business Sale</h2>
+<h3 id="1-lead">1.  <strong>Lead</strong></h3>
+<p>A potential customer who has shown some initial interest in the product or service. Leads are usually identified through marketing efforts such as website visits, email campaigns, or social media interactions.</p>
+<h3 id="2-qualified-lead">2.  <strong>Qualified Lead</strong></h3>
+<p>A lead that has been vetted and determined to have a genuine interest in the product, a need that the product can fulfill, and the potential to make a purchase. This stage involves assessing the lead's fit based on criteria such as budget, authority, need, and timeline (BANT).</p>
+<h3 id="3-opportunity">3.  <strong>Opportunity</strong></h3>
+<p>A qualified lead that has moved further down the pipeline and is actively engaged in discussions with the sales team. At this stage, the potential customer's needs and pain points are well understood, and the sales team works to align the product offering with those needs.</p>
+<h3 id="4-proposal">4.  <strong>Proposal</strong></h3>
+<p>The stage where the sales team presents a formal proposal to the potential customer, outlining the product or service offering, pricing, terms, and other relevant details. This is often accompanied by a detailed sales presentation or demo.</p>
+<h3 id="5-negotiation">5.  <strong>Negotiation</strong></h3>
+<p>In this stage, both the sales team and the potential customer negotiate the terms of the deal. This may involve discussions on pricing, contract terms, customization options, and other specific requirements. The goal is to reach a mutually beneficial agreement.</p>
+<h3 id="6-closed-won">6.  <strong>Closed-Won</strong></h3>
+<p>This stage is reached when the customer agrees to the terms and signs a contract or makes a purchase. The deal is considered "won," and the lead officially becomes a customer. At this point, the focus shifts to delivering the promised product or service.</p>
+<h3 id="7-implementation">7.  <strong>Implementation</strong></h3>
+<p>The process of delivering the product or service to the customer begins. This might involve setting up the product, providing training, or integrating the solution with the customer's existing systems.</p>
+<h3 id="8-production">8.  <strong>Production</strong></h3>
+<p>The final stage, where the product or service is fully operational and in use by the customer. Ongoing support, maintenance, and relationship management are essential to ensure customer satisfaction and foster long-term loyalty.</p>
+<p>These stages represent the typical flow of a sales pipeline, guiding the sales team through the process of converting leads into customers and ensuring a smooth transition from sales to production.</p>
+<h2 id="key-performance-metrics-for-a-sales-pipeline">Key Performance Metrics for a Sales Pipeline</h2>
+<p>Key Performance Indicators (KPIs) for a sales pipeline are metrics that help measure the effectiveness and efficiency of the sales process. These KPIs provide insights into how well leads are being managed, the performance of the sales team, and the overall health of the sales pipeline. Here are some common KPIs for a sales pipeline:</p>
+<h3 id="1-number-of-leads">1: <strong>Number of Leads</strong></h3>
+<p>The total number of new leads entering the sales pipeline over a specific period.
+This KPI indicates the effectiveness of marketing efforts and the potential for future sales. A higher number of leads suggests a healthy influx of potential customers.</p>
+<h3 id="2-lead-conversion-rate">2: <strong>Lead Conversion Rate</strong></h3>
+<p>The percentage of leads that are successfully converted into qualified leads.
+This KPI measures the effectiveness of the lead qualification process and helps identify how well the sales team is able to turn initial interest into genuine sales opportunities.</p>
+<h3 id="3-opportunity-conversion-rate">3: <strong>Opportunity Conversion Rate</strong></h3>
+<p>The percentage of qualified leads that are converted into sales opportunities.
+This KPI reflects the sales team's ability to move prospects further down the pipeline, turning them into active opportunities for a sale.</p>
+<h3 id="4-win-rate-close-rate">4: <strong>Win Rate (Close Rate)</strong></h3>
+<p>The percentage of opportunities that result in a closed-won deal.
+This KPI measures the effectiveness of the sales process in converting opportunities into actual sales. A higher win rate indicates a more efficient and successful sales process.</p>
+<h3 id="5-average-deal-size">5: <strong>Average Deal Size</strong></h3>
+<p>The average value of deals closed over a specific period.
+This KPI helps assess the revenue potential of the sales pipeline and can indicate the quality of the leads being pursued.</p>
+<h3 id="6-sales-cycle-length">6: <strong>Sales Cycle Length</strong></h3>
+<p>The average time it takes to move a lead from the initial stage to a closed-won deal.
+This KPI helps measure the efficiency of the sales process. A shorter sales cycle length typically indicates a more efficient pipeline, while a longer cycle may suggest delays or inefficiencies.</p>
+<h3 id="7-pipeline-velocity">7: <strong>Pipeline Velocity</strong></h3>
+<p>A measure of how quickly deals move through the sales pipeline, calculated as the number of opportunities multiplied by the average deal size, win rate, and divided by the length of the sales cycle.
+This KPI combines several key metrics to provide a comprehensive view of the pipeline's momentum, indicating how quickly revenue is likely to be generated.</p>
+<h3 id="8-sales-pipeline-coverage">8: <strong>Sales Pipeline Coverage</strong></h3>
+<p>The ratio of the value of opportunities in the pipeline to the revenue target for a given period.
+This KPI helps assess whether the pipeline has enough potential value to meet future sales targets. A pipeline coverage ratio of 3:1 is often considered healthy.</p>
+<h3 id="9-lead-response-time">9: <strong>Lead Response Time</strong></h3>
+<p>The average time it takes for the sales team to follow up with a new lead.
+This KPI is critical for ensuring that leads are engaged promptly, which can significantly impact conversion rates and customer satisfaction.</p>
+<h3 id="10-lost-opportunity-analysis">10: <strong>Lost Opportunity Analysis</strong></h3>
+<p>The percentage of opportunities that were lost and the reasons behind those losses.
+This KPI helps identify common obstacles or challenges that prevent deals from closing, providing insights for process improvements and training needs.</p>
+<h3 id="11-customer-acquisition-cost-cac">11: <strong>Customer Acquisition Cost (CAC)</strong></h3>
+<p>The total cost of acquiring a new customer, including marketing and sales expenses, divided by the number of new customers acquired.
+This KPI is crucial for understanding the efficiency of the sales process and ensuring that the cost to acquire customers is aligned with the expected revenue and profitability.</p>
+<h3 id="12-customer-lifetime-value-cltv">12: <strong>Customer Lifetime Value (CLTV)</strong></h3>
+<p>The total revenue expected from a customer over the duration of their relationship with the company.
+This KPI helps measure the long-term value of customers acquired through the sales pipeline and can inform decisions about resource allocation and customer retention strategies.</p>
 
 
 
@@ -978,7 +1060,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction">
+          <a href="../event-logs/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Event Logs">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -988,20 +1070,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Introduction
+                Event Logs
               </div>
             </div>
           </a>
         
         
           
-          <a href="../sales-pipeline/" class="md-footer__link md-footer__link--next" aria-label="Next: Sales Pipeline">
+          <a href="../gnn/" class="md-footer__link md-footer__link--next" aria-label="Next: GNN">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Sales Pipeline
+                GNN
               </div>
             </div>
             <div class="md-footer__button md-icon">
