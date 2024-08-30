@@ -1,6 +1,8 @@
 # Event Logs
 
 Gathering precise data from event logs is the first step in process mining.
+This page describes what events logs are, gives examples of them from different domains
+and discusses the st
 
 ## Introduction
 
