@@ -12,13 +12,13 @@
         <meta name="author" content="Dan McCreary">
       
       
-        <link rel="canonical" href="https://dmccrearytg.github.io/tg-process-mining/concepts/introduction/">
+        <link rel="canonical" href="https://dmccrearytg.github.io/tg-process-mining/concepts/logging-best-practices/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../event-logs/">
       
       
-        <link rel="next" href="../event-logs/">
+        <link rel="next" href="../sales-pipeline/">
       
       
       <link rel="icon" href="../../img/favicon.ico">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Introduction - TigerGraph Process Mining</title>
+        <title>Logging Best Practices - TigerGraph Process Mining</title>
       
     
     
@@ -58,11 +58,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Introduction - TigerGraph Process Mining" >
+        <meta  property="og:title"  content="Logging Best Practices - TigerGraph Process Mining" >
       
         <meta  property="og:description"  content="Resources for teaching classes Process Mining with TigerGraph." >
       
-        <meta  property="og:image"  content="https://dmccrearytg.github.io/tg-process-mining/assets/images/social/concepts/introduction.png" >
+        <meta  property="og:image"  content="https://dmccrearytg.github.io/tg-process-mining/assets/images/social/concepts/logging-best-practices.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -70,15 +70,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://dmccrearytg.github.io/tg-process-mining/concepts/introduction/" >
+        <meta  property="og:url"  content="https://dmccrearytg.github.io/tg-process-mining/concepts/logging-best-practices/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Introduction - TigerGraph Process Mining" >
+        <meta  name="twitter:title"  content="Logging Best Practices - TigerGraph Process Mining" >
       
         <meta  name="twitter:description"  content="Resources for teaching classes Process Mining with TigerGraph." >
       
-        <meta  name="twitter:image"  content="https://dmccrearytg.github.io/tg-process-mining/assets/images/social/concepts/introduction.png" >
+        <meta  name="twitter:image"  content="https://dmccrearytg.github.io/tg-process-mining/assets/images/social/concepts/logging-best-practices.png" >
       
     
     
@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction-to-process-mining-concepts" class="md-skip">
+        <a href="#event-logging-best-practices" class="md-skip">
           Skip to content
         </a>
       
@@ -129,7 +129,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Logging Best Practices
             
           </span>
         </div>
@@ -387,30 +387,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -419,116 +399,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#step-1-event-logs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 1: Event Logs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-2-case" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 2: Case
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3-activity" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 3: Activity
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-4-timestamp" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 4: Timestamp
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-5-process-discovery" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 5: Process Discovery
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-6-conformance-checking" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 6: Conformance Checking
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-7-performance-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 7: Performance Analysis
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-8-variant-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 8: Variant Analysis
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-9-root-cause-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 9: Root Cause Analysis
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-10-process-optimization" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 10: Process Optimization
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -559,10 +429,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../logging-best-practices/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Logging Best Practices
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -571,6 +461,158 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices-for-event-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices for Event Logging
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logging-levels-for-process-mining" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logging Levels for Process Mining
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-identifiers-in-event-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Identifiers in Event Logs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standards-organizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Organizations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Standards Organizations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ieee-institute-of-electrical-and-electronics-engineers" class="md-nav__link">
+    <span class="md-ellipsis">
+      IEEE (Institute of Electrical and Electronics Engineers)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iso-international-organization-for-standardization" class="md-nav__link">
+    <span class="md-ellipsis">
+      ISO (International Organization for Standardization)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-nist-national-institute-of-standards-and-technology" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 NIST (National Institute of Standards and Technology)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-wasp-open-web-application-security-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 *WASP (Open Web Application Security Project)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#w3c-world-wide-web-consortium" class="md-nav__link">
+    <span class="md-ellipsis">
+      W3C (World Wide Web Consortium)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#itil-information-technology-infrastructure-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      ITIL (Information Technology Infrastructure Library)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apqc-american-productivity-quality-center" class="md-nav__link">
+    <span class="md-ellipsis">
+      APQC (American Productivity &amp; Quality Center)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elk-stack-elasticsearch-logstash-kibana-and-observability-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      ELK Stack (Elasticsearch, Logstash, Kibana) and Observability Platforms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bpmiorg-business-process-management-initiative" class="md-nav__link">
+    <span class="md-ellipsis">
+      BPMI.org (Business Process Management Initiative)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opentelemetry" class="md-nav__link">
+    <span class="md-ellipsis">
+      OpenTelemetry
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -712,92 +754,134 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-event-logs" class="md-nav__link">
+  <a href="#best-practices-for-event-logging" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 1: Event Logs
+      Best Practices for Event Logging
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-case" class="md-nav__link">
+  <a href="#logging-levels-for-process-mining" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 2: Case
+      Logging Levels for Process Mining
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-activity" class="md-nav__link">
+  <a href="#key-identifiers-in-event-logs" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 3: Activity
+      Key Identifiers in Event Logs
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-timestamp" class="md-nav__link">
+  <a href="#standards-organizations" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 4: Timestamp
+      Standards Organizations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Standards Organizations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ieee-institute-of-electrical-and-electronics-engineers" class="md-nav__link">
+    <span class="md-ellipsis">
+      IEEE (Institute of Electrical and Electronics Engineers)
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-5-process-discovery" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#iso-international-organization-for-standardization" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 5: Process Discovery
+      ISO (International Organization for Standardization)
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-6-conformance-checking" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#3-nist-national-institute-of-standards-and-technology" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 6: Conformance Checking
+      3 NIST (National Institute of Standards and Technology)
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-7-performance-analysis" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#4-wasp-open-web-application-security-project" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 7: Performance Analysis
+      4 *WASP (Open Web Application Security Project)
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-8-variant-analysis" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#w3c-world-wide-web-consortium" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 8: Variant Analysis
+      W3C (World Wide Web Consortium)
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-9-root-cause-analysis" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#itil-information-technology-infrastructure-library" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 9: Root Cause Analysis
+      ITIL (Information Technology Infrastructure Library)
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-10-process-optimization" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#apqc-american-productivity-quality-center" class="md-nav__link">
     <span class="md-ellipsis">
-      Step 10: Process Optimization
+      APQC (American Productivity &amp; Quality Center)
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elk-stack-elasticsearch-logstash-kibana-and-observability-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      ELK Stack (Elasticsearch, Logstash, Kibana) and Observability Platforms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bpmiorg-business-process-management-initiative" class="md-nav__link">
+    <span class="md-ellipsis">
+      BPMI.org (Business Process Management Initiative)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opentelemetry" class="md-nav__link">
+    <span class="md-ellipsis">
+      OpenTelemetry
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -819,28 +903,221 @@
   
 
 
-<h1 id="introduction-to-process-mining-concepts">Introduction to Process Mining Concepts</h1>
-<h2 id="step-1-event-logs">Step 1: <strong>Event Logs</strong></h2>
-<p>The foundational data source in process mining, event logs capture the sequence of events within a process, including timestamps, case IDs, and event types. The first step in any process mining effort is to gather and prepare these logs for analysis.</p>
-<h2 id="step-2-case">Step 2: <strong>Case</strong></h2>
-<p>A case represents a single instance of the process being analyzed. In event logs, cases are identified by unique IDs and are essential for grouping related events together to understand the sequence of activities for each instance.</p>
-<h2 id="step-3-activity">Step 3: <strong>Activity</strong></h2>
-<p>An activity is a specific task or action within a process. Activities are the building blocks of process models and are derived from the events recorded in the event logs.</p>
-<h2 id="step-4-timestamp">Step 4: <strong>Timestamp</strong></h2>
-<p>Timestamps are the recorded times at which events occur. They are crucial for sequencing events within a case, calculating durations, and analyzing the timing and order of activities in the process.</p>
-<h2 id="step-5-process-discovery">Step 5: <strong>Process Discovery</strong></h2>
-<p>Process discovery involves automatically generating a visual or structured representation (model) of the process from the event logs. This step reveals the actual process flow as it happens in practice, which might differ from the intended process.</p>
-<h2 id="step-6-conformance-checking">Step 6: <strong>Conformance Checking</strong></h2>
-<p>Conformance checking compares the discovered process model against a predefined (or ideal) process model. This step identifies deviations, inefficiencies, and non-compliant behavior within the process.</p>
-<h2 id="step-7-performance-analysis">Step 7: <strong>Performance Analysis</strong></h2>
-<p>This step involves analyzing the timing and efficiency of the process, using metrics like throughput time, waiting times, and bottleneck identification. Performance analysis helps quantify how well the process operates.</p>
-<h2 id="step-8-variant-analysis">Step 8: <strong>Variant Analysis</strong></h2>
-<p>Variant analysis identifies different ways (variants) in which a process is executed. It compares these variants to understand why certain cases follow different paths and what impact these variations have on process outcomes.</p>
-<h2 id="step-9-root-cause-analysis">Step 9: <strong>Root Cause Analysis</strong></h2>
-<p>Once deviations or inefficiencies are identified, root cause analysis is used to understand the underlying reasons for these issues. This analysis can involve looking at specific cases, activities, or conditions that lead to process problems.</p>
-<h2 id="step-10-process-optimization">Step 10: <strong>Process Optimization</strong></h2>
-<p>The final step in process mining involves using insights gained from the previous steps to optimize the process. This can include redesigning the process, automating tasks, reallocating resources, or implementing new controls to improve overall efficiency and compliance.</p>
-<p>These concepts form the core steps and techniques in solving a process mining problem, guiding the analysis from raw data to actionable improvements.</p>
+<h1 id="event-logging-best-practices">Event Logging Best Practices</h1>
+<p>To achieve high-quality process mining, effective event logging is crucial. Here are some best practices for event logging, along with recommendations for logging levels and necessary IDs to tie events back to a workflow process:</p>
+<h2 id="best-practices-for-event-logging">Best Practices for Event Logging</h2>
+<ol>
+<li>
+<p><strong>Granular Logging</strong>:</p>
+<ul>
+<li>Log events at a granular level to capture detailed information about each step in a workflow. This includes start and end times, user interactions, system decisions, and any transitions between states.</li>
+<li>
+<p><strong>Consistent and Structured Log Format</strong>:</p>
+</li>
+<li>
+<p>Ensure that logs are structured consistently across all systems involved. Use a common format (e.g., JSON, XML) that is easily parsable and allows for the inclusion of detailed metadata.</p>
+</li>
+<li>
+<p><strong>Timestamp Precision</strong>:</p>
+</li>
+<li>
+<p>Use high-precision timestamps (e.g., microseconds) to accurately capture the sequence of events, especially in high-frequency processes.</p>
+</li>
+<li>
+<p><strong>Unique Identifiers</strong>:</p>
+</li>
+<li>
+<p>Assign unique identifiers to various components of the process:</p>
+<ul>
+<li><strong>Process Instance ID</strong>: Ties all events related to a specific workflow instance together.</li>
+<li><strong>Activity ID</strong>: Identifies specific activities or steps within the process.</li>
+<li><strong>Case ID</strong>: A broader identifier that might encompass multiple process instances if they belong to the same case or customer.</li>
+<li><strong>User ID</strong>: Identifies the user responsible for triggering or interacting with the event.</li>
+<li><strong>Correlation ID</strong>: Used to track events across distributed systems, ensuring end-to-end visibility of a workflow that spans multiple services.</li>
+</ul>
+</li>
+<li>
+<p><strong>Contextual Information</strong>:</p>
+</li>
+<li>
+<p>Include contextual information in the logs, such as system state, user inputs, decision outcomes, and environmental variables, to provide insights into why certain events occurred.</p>
+</li>
+<li>
+<p><strong>Error and Exception Logging</strong>:</p>
+</li>
+<li>
+<p>Capture detailed information about errors and exceptions, including stack traces, error codes, and contextual data to facilitate root cause analysis.</p>
+</li>
+<li>
+<p><strong>Event Sequencing and Correlation</strong>:</p>
+</li>
+<li>
+<p>Ensure that logs can be easily sequenced and correlated to reconstruct the exact flow of the process. This is crucial for identifying bottlenecks, loops, or deviations from the expected process flow.</p>
+</li>
+<li>
+<p><strong>Data Privacy and Security</strong>:</p>
+</li>
+<li>
+<p>Be mindful of logging sensitive information. Anonymize or obfuscate personal data where necessary, and ensure logs are stored securely.</p>
+</li>
+<li>
+<p><strong>Scalable Storage and Retrieval</strong>:</p>
+</li>
+<li>
+<p>Implement a logging system that can scale with your process volume and provides efficient retrieval mechanisms for large-scale analysis. Consider using distributed logging systems or cloud-based solutions.</p>
+</li>
+<li>
+<p><strong>Real-Time Monitoring and Alerts</strong>:</p>
+</li>
+<li>
+<p>Set up real-time monitoring and alerting on specific log events to detect and respond to anomalies or issues as they occur.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="logging-levels-for-process-mining">Logging Levels for Process Mining</h2>
+<ul>
+<li><strong>DEBUG</strong>:<ul>
+<li>Capture detailed information useful for diagnosing problems. This should include low-level event details that help in reconstructing the exact sequence of actions.</li>
+</ul>
+</li>
+<li><strong>INFO</strong>:<ul>
+<li>Log high-level events that describe the normal operation of the process, such as process start and end, key decision points, and successful completions of significant tasks.</li>
+</ul>
+</li>
+<li><strong>WARN</strong>:<ul>
+<li>Record potentially harmful situations that do not stop the process but might lead to issues, such as retries, minor errors, or unexpected delays.</li>
+</ul>
+</li>
+<li><strong>ERROR</strong>:<ul>
+<li>Capture events where the process encounters problems that require intervention but can continue running, such as failed tasks that are retried successfully.</li>
+</ul>
+</li>
+<li><strong>FATAL</strong>:<ul>
+<li>Log events that cause the process to terminate or fail entirely. This includes critical errors that stop the process flow.</li>
+</ul>
+</li>
+</ul>
+<h2 id="key-identifiers-in-event-logs">Key Identifiers in Event Logs</h2>
+<ul>
+<li>
+<p><strong>Process Instance ID</strong>: Links all events associated with a specific instance of the process, ensuring the ability to trace the entire workflow.</p>
+</li>
+<li>
+<p><strong>Activity ID</strong>: Identifies the specific task or step within the process, helping to isolate where in the process an event occurred.</p>
+</li>
+<li>
+<p><strong>Case ID</strong>: Allows for grouping of related process instances, useful in scenarios like customer support where multiple processes may be related to the same case.</p>
+</li>
+<li>
+<p><strong>User ID</strong>: Ties events to the individual user or system that triggered or interacted with the process, aiding in user behavior analysis and auditing.</p>
+</li>
+<li>
+<p><strong>Correlation ID</strong>: Essential in distributed systems to track related events across different services and systems, ensuring you can trace a process end-to-end.</p>
+</li>
+</ul>
+<p>By following these best practices and using appropriate logging levels and identifiers, you can ensure that your event logs provide the necessary detail and structure for effective process mining, leading to more accurate and actionable insights.</p>
+<h2 id="standards-organizations">Standards Organizations</h2>
+<p>Promoting and adhering to best practices in event logging, particularly for process mining, is often guided by industry standards, frameworks, and guidelines. Several organizations and websites play a key role in defining and promoting these best practices:</p>
+<h3 id="ieee-institute-of-electrical-and-electronics-engineers">IEEE (Institute of Electrical and Electronics Engineers)</h3>
+<ul>
+<li>
+<p><strong>IEEE Standards</strong>: IEEE offers various standards related to software engineering, including logging practices. Standards like IEEE 1012 (Standard for System and Software Verification and Validation) provide guidelines on what and how to log to ensure traceability and auditability.</p>
+</li>
+<li>
+<p><strong>Website</strong>: <a href="https://standards.ieee.org">IEEE Standards</a></p>
+</li>
+</ul>
+<h3 id="iso-international-organization-for-standardization">ISO (International Organization for Standardization)</h3>
+<ul>
+<li>
+<p><strong>ISO/IEC 27001</strong>: This standard specifies the requirements for establishing, implementing, maintaining, and continually improving an information security management system. It includes guidelines on logging and monitoring for security purposes.</p>
+</li>
+<li>
+<p><strong>ISO/IEC 19510</strong>: Known as BPMN (Business Process Model and Notation), this standard provides a graphical notation for specifying business processes in a Business Process Diagram (BPD). While not specific to logging, it influences how processes are documented and monitored, which impacts logging strategies.</p>
+</li>
+<li>
+<p><strong>Website</strong>: <a href="https://www.iso.org">ISO Standards</a></p>
+</li>
+</ul>
+<h3 id="3-nist-national-institute-of-standards-and-technology">3 NIST (National Institute of Standards and Technology)</h3>
+<ul>
+<li>
+<p><strong>NIST SP 800-92</strong>: This is a guide to computer security log management. It provides comprehensive guidelines on developing, implementing, and maintaining effective log management programs, which are critical for process mining and security.</p>
+</li>
+<li>
+<p><strong>Website</strong>: <a href="https://csrc.nist.gov/publications/detail/sp/800-92/final">NIST SP 800-92</a></p>
+</li>
+</ul>
+<h3 id="4-wasp-open-web-application-security-project">4 *WASP (Open Web Application Security Project)</h3>
+<ul>
+<li>
+<p><strong>OWASP Logging Cheat Sheet</strong>: OWASP provides best practices for secure logging, especially in web applications. It covers the essential aspects of what to log, how to structure logs, and how to ensure logs are useful for security and process analysis.</p>
+</li>
+<li>
+<p><strong>Website</strong>: OWASP Logging Cheat Sheet</p>
+</li>
+</ul>
+<h3 id="w3c-world-wide-web-consortium">W3C (World Wide Web Consortium)</h3>
+<ul>
+<li>
+<p><strong>W3C Web Performance Working Group</strong>: While primarily focused on web performance, the guidelines and recommendations from W3C on monitoring and performance logging can be extended to cover process mining scenarios, especially in web-based applications.</p>
+</li>
+<li>
+<p><strong>Website</strong>: <a href="https://www.w3.org/webperf/">W3C Web Performance</a></p>
+</li>
+<li>
+<p><a href="">W3C Data Provinance</a></p>
+</li>
+</ul>
+<h3 id="itil-information-technology-infrastructure-library">ITIL (Information Technology Infrastructure Library)</h3>
+<ul>
+<li>
+<p><strong>ITIL Framework</strong>: ITIL is a widely recognized framework for IT service management. It provides guidelines on best practices for service lifecycle management, including logging for incident management, change management, and continuous improvement.</p>
+</li>
+<li>
+<p><strong>Website</strong>: ITIL</p>
+</li>
+</ul>
+<h3 id="apqc-american-productivity-quality-center">APQC (American Productivity &amp; Quality Center)</h3>
+<ul>
+<li>
+<p><strong>Process Classification Framework (PCF)</strong>: APQC provides a taxonomy of business processes across various industries. This framework helps organizations standardize their process documentation and monitoring, indirectly influencing how event logging should be structured for process mining.</p>
+</li>
+<li>
+<p><strong>Website</strong>: APQC Process Classification Framework</p>
+</li>
+</ul>
+<h3 id="elk-stack-elasticsearch-logstash-kibana-and-observability-platforms">ELK Stack (Elasticsearch, Logstash, Kibana) and Observability Platforms</h3>
+<ul>
+<li>
+<p><strong>Best Practices Documentation</strong>: While not a standards organization, the ELK Stack (and similar platforms like Splunk and Datadog) provides extensive documentation and community best practices on log management, structuring logs for analysis, and implementing logging strategies that facilitate effective process mining.</p>
+</li>
+<li>
+<p><strong>Website</strong>: <a href="https://www.elastic.co/what-is/elk-stack">Elastic.co</a></p>
+</li>
+</ul>
+<h3 id="bpmiorg-business-process-management-initiative">BPMI.org (Business Process Management Initiative)</h3>
+<ul>
+<li>
+<p><strong>Business Process Modeling Notation (BPMN)</strong>: This initiative developed BPMN, which provides a standard way to visualize business processes. The notation helps standardize the documentation of processes, which influences the structure and quality of event logs.</p>
+</li>
+<li>
+<p><strong>Website</strong>: <a href="https://www.bpmn.org">BPMI.org</a></p>
+</li>
+</ul>
+<h3 id="opentelemetry">OpenTelemetry</h3>
+<ul>
+<li>
+<p><strong>OpenTelemetry Project</strong>: This is an open-source observability framework that provides APIs and tools to instrument, generate, collect, and export telemetry data (logs, metrics, and traces) to help you analyze your software's performance and behavior. OpenTelemetry helps standardize how logging is done, which is beneficial for process mining.</p>
+</li>
+<li>
+<p><strong>Website</strong>: <a href="https://opentelemetry.io">OpenTelemetry</a></p>
+</li>
+</ul>
+<p>By following the guidelines and standards promoted by these organizations, companies can ensure that their logging practices are robust, consistent, and aligned with best practices, ultimately supporting high-quality process mining and analysis.</p>
+<p>4o</p>
+<p>ChatGPT can make mistakes. Check important info.</p>
 
 
 
@@ -879,7 +1156,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
+          <a href="../event-logs/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Event Logs">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -889,20 +1166,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Overview
+                Event Logs
               </div>
             </div>
           </a>
         
         
           
-          <a href="../event-logs/" class="md-footer__link md-footer__link--next" aria-label="Next: Event Logs">
+          <a href="../sales-pipeline/" class="md-footer__link md-footer__link--next" aria-label="Next: Sales Pipeline">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Event Logs
+                Sales Pipeline
               </div>
             </div>
             <div class="md-footer__button md-icon">
