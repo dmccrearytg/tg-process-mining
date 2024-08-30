@@ -16,6 +16,7 @@ nav:
     - Overview: concepts/index.md
     - Introduction: concepts/introduction.md
     - Event Logs: concepts/event-logs.md
+    - Logging Best Practices: concepts/logging-best-practices.md
     - Sales Pipeline: concepts/sales-pipeline.md
     - GNN: concepts/gnn.md
   - Glossary: glossary.md
@@ -39,6 +40,8 @@ theme:
     - navigation.footer
 plugins:
   - search
+  # you must have the cairo libraries installed: https://t.ly/MfX6u
+  # export DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib
   - social
 markdown_extensions:
   - admonition
